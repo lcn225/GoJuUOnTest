@@ -35,9 +35,9 @@ Partial Class Test_Form
         'Number_Label
         '
         Me.Number_Label.AutoSize = True
-        Me.Number_Label.Location = New System.Drawing.Point(113, 66)
+        Me.Number_Label.Location = New System.Drawing.Point(113, 61)
         Me.Number_Label.Name = "Number_Label"
-        Me.Number_Label.Size = New System.Drawing.Size(27, 13)
+        Me.Number_Label.Size = New System.Drawing.Size(23, 12)
         Me.Number_Label.TabIndex = 0
         Me.Number_Label.Text = "N/A"
         '
@@ -45,19 +45,19 @@ Partial Class Test_Form
         '
         Me.Question_Label.AutoSize = True
         Me.Question_Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 60.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Question_Label.Location = New System.Drawing.Point(218, 129)
+        Me.Question_Label.Location = New System.Drawing.Point(218, 119)
         Me.Question_Label.Name = "Question_Label"
-        Me.Question_Label.Size = New System.Drawing.Size(104, 91)
+        Me.Question_Label.Size = New System.Drawing.Size(119, 91)
         Me.Question_Label.TabIndex = 1
         Me.Question_Label.Text = "あ"
-        Me.Question_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Question_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'A_Button
         '
         Me.A_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.A_Button.Location = New System.Drawing.Point(79, 305)
+        Me.A_Button.Location = New System.Drawing.Point(79, 282)
         Me.A_Button.Name = "A_Button"
-        Me.A_Button.Size = New System.Drawing.Size(91, 40)
+        Me.A_Button.Size = New System.Drawing.Size(91, 37)
         Me.A_Button.TabIndex = 2
         Me.A_Button.Text = "N/A"
         Me.A_Button.UseVisualStyleBackColor = True
@@ -65,9 +65,9 @@ Partial Class Test_Form
         'B_Button
         '
         Me.B_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.B_Button.Location = New System.Drawing.Point(176, 305)
+        Me.B_Button.Location = New System.Drawing.Point(176, 282)
         Me.B_Button.Name = "B_Button"
-        Me.B_Button.Size = New System.Drawing.Size(93, 40)
+        Me.B_Button.Size = New System.Drawing.Size(93, 37)
         Me.B_Button.TabIndex = 3
         Me.B_Button.Text = "N/A"
         Me.B_Button.UseVisualStyleBackColor = True
@@ -75,9 +75,9 @@ Partial Class Test_Form
         'D_Button
         '
         Me.D_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.D_Button.Location = New System.Drawing.Point(372, 305)
+        Me.D_Button.Location = New System.Drawing.Point(372, 282)
         Me.D_Button.Name = "D_Button"
-        Me.D_Button.Size = New System.Drawing.Size(91, 40)
+        Me.D_Button.Size = New System.Drawing.Size(91, 37)
         Me.D_Button.TabIndex = 5
         Me.D_Button.Text = "N/A"
         Me.D_Button.UseVisualStyleBackColor = True
@@ -85,9 +85,9 @@ Partial Class Test_Form
         'C_Button
         '
         Me.C_Button.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.C_Button.Location = New System.Drawing.Point(275, 305)
+        Me.C_Button.Location = New System.Drawing.Point(275, 282)
         Me.C_Button.Name = "C_Button"
-        Me.C_Button.Size = New System.Drawing.Size(91, 40)
+        Me.C_Button.Size = New System.Drawing.Size(91, 37)
         Me.C_Button.TabIndex = 4
         Me.C_Button.Text = "N/A"
         Me.C_Button.UseVisualStyleBackColor = True
@@ -95,26 +95,26 @@ Partial Class Test_Form
         'QuestionType_Label
         '
         Me.QuestionType_Label.AutoSize = True
-        Me.QuestionType_Label.Location = New System.Drawing.Point(187, 66)
+        Me.QuestionType_Label.Location = New System.Drawing.Point(187, 61)
         Me.QuestionType_Label.Name = "QuestionType_Label"
-        Me.QuestionType_Label.Size = New System.Drawing.Size(39, 13)
+        Me.QuestionType_Label.Size = New System.Drawing.Size(41, 12)
         Me.QuestionType_Label.TabIndex = 10
         Me.QuestionType_Label.Text = "Label1"
         '
         'Score_Label
         '
         Me.Score_Label.AutoSize = True
-        Me.Score_Label.Location = New System.Drawing.Point(407, 66)
+        Me.Score_Label.Location = New System.Drawing.Point(407, 61)
         Me.Score_Label.Name = "Score_Label"
-        Me.Score_Label.Size = New System.Drawing.Size(39, 13)
+        Me.Score_Label.Size = New System.Drawing.Size(41, 12)
         Me.Score_Label.TabIndex = 11
         Me.Score_Label.Text = "Label1"
         '
         'Test_Form
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(540, 483)
+        Me.ClientSize = New System.Drawing.Size(540, 446)
         Me.Controls.Add(Me.Score_Label)
         Me.Controls.Add(Me.QuestionType_Label)
         Me.Controls.Add(Me.D_Button)

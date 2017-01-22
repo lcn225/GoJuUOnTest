@@ -27,7 +27,6 @@ Partial Class Result_Form
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Title_Label = New System.Windows.Forms.Label()
         Me.Result_DataGridView = New System.Windows.Forms.DataGridView()
-        Me.Retry_Button = New System.Windows.Forms.Button()
         Me.Num = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Quertion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.A = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -35,6 +34,7 @@ Partial Class Result_Form
         Me.C = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.D = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.答案 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Retry_Button = New System.Windows.Forms.Button()
         CType(Me.Result_DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -82,15 +82,6 @@ Partial Class Result_Form
         Me.Result_DataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.Result_DataGridView.Size = New System.Drawing.Size(423, 251)
         Me.Result_DataGridView.TabIndex = 1
-        '
-        'Retry_Button
-        '
-        Me.Retry_Button.Location = New System.Drawing.Point(224, 382)
-        Me.Retry_Button.Name = "Retry_Button"
-        Me.Retry_Button.Size = New System.Drawing.Size(75, 21)
-        Me.Retry_Button.TabIndex = 2
-        Me.Retry_Button.Text = "再来一次"
-        Me.Retry_Button.UseVisualStyleBackColor = True
         '
         'Num
         '
@@ -141,6 +132,15 @@ Partial Class Result_Form
         Me.答案.Name = "答案"
         Me.答案.ReadOnly = True
         Me.答案.Width = 70
+        '
+        'Retry_Button
+        '
+        Me.Retry_Button.Location = New System.Drawing.Point(224, 382)
+        Me.Retry_Button.Name = "Retry_Button"
+        Me.Retry_Button.Size = New System.Drawing.Size(75, 21)
+        Me.Retry_Button.TabIndex = 2
+        Me.Retry_Button.Text = "再来一次"
+        Me.Retry_Button.UseVisualStyleBackColor = True
         '
         'Result_Form
         '

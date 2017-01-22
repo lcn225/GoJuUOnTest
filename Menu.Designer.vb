@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Menu_Form
+Partial Class TestMenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -46,6 +46,8 @@ Partial Class Menu_Form
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Checked = True
+        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox1.Location = New System.Drawing.Point(77, 222)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(48, 16)
@@ -121,7 +123,7 @@ Partial Class Menu_Form
         Me.Right_ListBox.Size = New System.Drawing.Size(120, 88)
         Me.Right_ListBox.TabIndex = 14
         '
-        'Menu_Form
+        'TestMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -135,7 +137,7 @@ Partial Class Menu_Form
         Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Title_Label)
-        Me.Name = "Menu_Form"
+        Me.Name = "TestMenu"
         Me.Text = "五十音测试软件"
         CType(Me.NumOfQuestion_NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
