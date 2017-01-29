@@ -1,7 +1,7 @@
 ﻿Public Class TestMenu
 
-    Public TotalNum As Integer = 104
-    Public TestRange(TotalNum - 1) As Integer
+    Public TotalQty As Integer = 104
+    Public TestRange(TotalQty - 1) As Integer
     'Public
 
     Private Sub GetTestRange()
@@ -31,15 +31,27 @@
     '获得测试范围
 
     Private Sub Start_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Start_Button.Click
+
         GetTestRange()
         '获取测试范围
-        Test_Form.QuestionNum = 0
+        Result_Form.QuestionNum = 0
         '测试编号清零
-        Test_Form.Score = 0
+        Result_Form.Score = 0
         '分数清零
-        Test_Form.Show()
-        Test_Form.NextQuestion()
+
+        Dim Inf As Boolean = infinite_CheckBox.Checked
+
+        If Inf Then
+            Inf_Test.Show()
+            Inf_Test.NextQuestion()
+        Else
+            Test_Form.Show()
+            Test_Form.NextQuestion()
+        End If
+        '根据勾选情况判断是否进入无尽模式
+
     End Sub
+    '点击开始按钮开始考试
 
     Private Sub Menu_Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         For index = 1 To 104

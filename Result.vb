@@ -1,5 +1,11 @@
 ﻿Public Class Result_Form
 
+
+    Public QuestionNum As Integer
+    '问题序号
+    Public Score As Integer
+    '得分
+
     Public choose() As Integer
 
     Private Function LoadAnswer()
@@ -18,9 +24,9 @@
 
     Private Function LoadChoose()
         FileOpen(1, "Choose.txt", OpenMode.Input)
-        Dim Choose(Test_Form.QuestionNum) As Integer
+        Dim Choose(Me.QuestionNum) As Integer
         Dim i As Integer, l As String
-        For i = 0 To Test_Form.QuestionNum - 1
+        For i = 0 To Me.QuestionNum - 1
             l = LineInput(1)
             Choose(i) = Int(l)
         Next
@@ -66,12 +72,12 @@
 
     Public Sub ResultStart()
         Test_Form.Hide()
-        Title_Label.Text = "得分：" & Test_Form.Score & " / " & Test_Form.QuestionNum
+        Title_Label.Text = "得分：" & Me.Score & " / " & Me.QuestionNum
 
         Result_DataGridView.Rows.Clear()
         Dim i As Integer = 0
 
-        For i = 0 To Test_Form.QuestionNum - 1
+        For i = 0 To Me.QuestionNum - 1
             FillTab(i)
             MarkChoose(i)
         Next
@@ -80,11 +86,15 @@
 
         FileClose(1)
         FileClose(2)
+        '关闭文件写入
 
         choose = LoadChoose()
+        '读取答卷
         Me.ResultStart()
+        '显示结果
 
     End Sub
+    '载入时显示结果
 
     Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles Result_DataGridView.CellContentClick
 

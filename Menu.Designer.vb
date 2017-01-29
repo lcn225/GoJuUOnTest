@@ -31,6 +31,7 @@ Partial Class TestMenu
         Me.Start_Button = New System.Windows.Forms.Button()
         Me.Left_ListBox = New System.Windows.Forms.ListBox()
         Me.Right_ListBox = New System.Windows.Forms.ListBox()
+        Me.infinite_CheckBox = New System.Windows.Forms.CheckBox()
         CType(Me.NumOfQuestion_NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,7 +42,7 @@ Partial Class TestMenu
         Me.Title_Label.Name = "Title_Label"
         Me.Title_Label.Size = New System.Drawing.Size(95, 12)
         Me.Title_Label.TabIndex = 2
-        Me.Title_Label.Text = "五十音测试 v0.3"
+        Me.Title_Label.Text = "五十音测试 v1.1"
         '
         'CheckBox1
         '
@@ -123,11 +124,22 @@ Partial Class TestMenu
         Me.Right_ListBox.Size = New System.Drawing.Size(120, 88)
         Me.Right_ListBox.TabIndex = 14
         '
+        'infinite_CheckBox
+        '
+        Me.infinite_CheckBox.AutoSize = True
+        Me.infinite_CheckBox.Location = New System.Drawing.Point(80, 289)
+        Me.infinite_CheckBox.Name = "infinite_CheckBox"
+        Me.infinite_CheckBox.Size = New System.Drawing.Size(72, 16)
+        Me.infinite_CheckBox.TabIndex = 15
+        Me.infinite_CheckBox.Text = "无尽模式"
+        Me.infinite_CheckBox.UseVisualStyleBackColor = True
+        '
         'TestMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(537, 448)
+        Me.Controls.Add(Me.infinite_CheckBox)
         Me.Controls.Add(Me.Right_ListBox)
         Me.Controls.Add(Me.Left_ListBox)
         Me.Controls.Add(Me.Start_Button)
@@ -153,5 +165,5 @@ Partial Class TestMenu
     Friend WithEvents Start_Button As System.Windows.Forms.Button
     Friend WithEvents Left_ListBox As System.Windows.Forms.ListBox
     Friend WithEvents Right_ListBox As System.Windows.Forms.ListBox
-
+    Friend WithEvents infinite_CheckBox As CheckBox
 End Class

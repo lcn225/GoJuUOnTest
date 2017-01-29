@@ -1,7 +1,7 @@
 ﻿Imports System
 Imports System.IO
-Public Class Test_Form
 
+Public Class Inf_Test
     Public Exam() As String = GetExam()
     '读取csv，生成题库
     Public Range As Integer = Exam.Length
@@ -177,10 +177,11 @@ Public Class Test_Form
         QuestionType_Label.Text = TestMenu.Left_ListBox.Items(RandomType(0)) + "→" + TestMenu.Right_ListBox.Items(RandomType(1))
         '显示题型
 
-        Me.Score_Label.Text = "得分：" & Result_Form.Score
+        Dim Per = Result_Form.Score / (Result_Form.QuestionNum - 1)
+        Me.Score_Label.Text = "正确率：" & Format(Per, "0.0%")
         '显示得分
 
-        Me.Number_Label.Text = Result_Form.QuestionNum & " / " & TestMenu.NumOfQuestion_NumericUpDown.Value
+        Me.Number_Label.Text = Result_Form.QuestionNum & " / ∞"
         '显示当前题号
 
         Question_Label.Text = ShowText(Exam, QuestionSeed, RandomType(0))
@@ -209,66 +210,66 @@ Public Class Test_Form
     End Sub
 
     Private Sub A_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles A_Button.Click
+
         PrintLine(2, 0)
+
         If AnswerSeed(4) = 0 Then
             Result_Form.Score = Result_Form.Score + 1
         End If
 
-        If Result_Form.QuestionNum = TestMenu.NumOfQuestion_NumericUpDown.Value Then
-            Result_Form.Show()
-            Me.Close()
-        Else : NextQuestion()
-        End If
+        NextQuestion()
 
     End Sub
     '按下按钮后，将结果写入"Choose.txt"，如果正确，分数+1。如果题目答完，显示得分，否则下一题。
 
     Private Sub B_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles B_Button.Click
+
         PrintLine(2, 1)
+
         If AnswerSeed(4) = 1 Then
             Result_Form.Score = Result_Form.Score + 1
         End If
 
-        If Result_Form.QuestionNum = TestMenu.NumOfQuestion_NumericUpDown.Value Then
-            Result_Form.Show()
-            Me.Close()
-        Else : NextQuestion()
-        End If
+        NextQuestion()
+
     End Sub
     '按下按钮后，将结果写入"Choose.txt"，如果正确，分数+1。如果题目答完，显示得分，否则下一题。
 
     Private Sub C_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles C_Button.Click
+
         PrintLine(2, 2)
+
         If AnswerSeed(4) = 2 Then
             Result_Form.Score = Result_Form.Score + 1
         End If
 
-        If Result_Form.QuestionNum = TestMenu.NumOfQuestion_NumericUpDown.Value Then
-            Result_Form.Show()
-            Me.Close()
-        Else : NextQuestion()
-        End If
+        NextQuestion()
+
     End Sub
     '按下按钮后，将结果写入"Choose.txt"，如果正确，分数+1。如果题目答完，显示得分，否则下一题。
 
     Private Sub D_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles D_Button.Click
+
         PrintLine(2, 3)
+
         If AnswerSeed(4) = 3 Then
             Result_Form.Score = Result_Form.Score + 1
         End If
 
-        If Result_Form.QuestionNum = TestMenu.NumOfQuestion_NumericUpDown.Value Then
-            Result_Form.Show()
-            Me.Close()
-        Else : NextQuestion()
-        End If
+        NextQuestion()
+
     End Sub
     '按下按钮后，将结果写入"Choose.txt"，如果正确，分数+1。如果题目答完，显示得分，否则下一题。
+
 
     Private Sub Test_Form_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.Closing
         FileClose(1)
         FileClose(2)
+
+        Result_Form.QuestionNum = Result_Form.QuestionNum - 1
+        '扣除当前题数（因未作答）
+
+        Result_Form.Show()
+
     End Sub
-
-
 End Class

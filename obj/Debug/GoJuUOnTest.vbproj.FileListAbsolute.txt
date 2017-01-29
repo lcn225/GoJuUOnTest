@@ -20,3 +20,5 @@ C:\Users\LCN\Documents\Visual Studio 2015\Projects\GoJuUOnTest\GoJuUOnTest\bin\D
 C:\Users\LCN\Documents\Visual Studio 2015\Projects\GoJuUOnTest\GoJuUOnTest\bin\Debug\GoJuUOnTest.pdb
 C:\Users\LCN\Documents\Visual Studio 2015\Projects\GoJuUOnTest\GoJuUOnTest\bin\Debug\GoJuUOnTest.xml
 C:\Users\LCN\Documents\Visual Studio 2015\Projects\GoJuUOnTest\GoJuUOnTest\obj\Debug\GoJuUOnTest.TestMenu.resources
+C:\Users\LCN\Documents\Visual Studio 2015\Projects\GoJuUOnTest\GoJuUOnTest\obj\Debug\GoJuUOnTest.vbprojResolveAssemblyReference.cache
+C:\Users\LCN\Documents\Visual Studio 2015\Projects\GoJuUOnTest\GoJuUOnTest\obj\Debug\GoJuUOnTest.Inf_Test.resources
