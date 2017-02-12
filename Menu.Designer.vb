@@ -88,6 +88,7 @@ Partial Class TestMenu
         'NumOfQuestion_NumericUpDown
         '
         Me.NumOfQuestion_NumericUpDown.Location = New System.Drawing.Point(365, 222)
+        Me.NumOfQuestion_NumericUpDown.Maximum = New Decimal(New Integer() {999, 0, 0, 0})
         Me.NumOfQuestion_NumericUpDown.Name = "NumOfQuestion_NumericUpDown"
         Me.NumOfQuestion_NumericUpDown.Size = New System.Drawing.Size(85, 21)
         Me.NumOfQuestion_NumericUpDown.TabIndex = 7

@@ -44,6 +44,7 @@
         If Inf Then
             Inf_Test.Show()
             Inf_Test.NextQuestion()
+            NumOfQuestion_NumericUpDown.Value = 998
         Else
             Test_Form.Show()
             Test_Form.NextQuestion()

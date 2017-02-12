@@ -22,3 +22,17 @@ C:\Users\LCN\Documents\Visual Studio 2015\Projects\GoJuUOnTest\GoJuUOnTest\bin\D
 C:\Users\LCN\Documents\Visual Studio 2015\Projects\GoJuUOnTest\GoJuUOnTest\obj\Debug\GoJuUOnTest.TestMenu.resources
 C:\Users\LCN\Documents\Visual Studio 2015\Projects\GoJuUOnTest\GoJuUOnTest\obj\Debug\GoJuUOnTest.vbprojResolveAssemblyReference.cache
 C:\Users\LCN\Documents\Visual Studio 2015\Projects\GoJuUOnTest\GoJuUOnTest\obj\Debug\GoJuUOnTest.Inf_Test.resources
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\bin\Debug\GoJuUOnTest.exe.config
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\obj\Debug\GoJuUOnTest.exe
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\obj\Debug\GoJuUOnTest.xml
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\obj\Debug\GoJuUOnTest.pdb
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\bin\Debug\GoJuUOnTest.exe
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\bin\Debug\GoJuUOnTest.pdb
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\bin\Debug\GoJuUOnTest.xml
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\obj\Debug\GoJuUOnTest.vbprojResolveAssemblyReference.cache
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\obj\Debug\GoJuUOnTest.Inf_Test.resources
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\obj\Debug\GoJuUOnTest.TestMenu.resources
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\obj\Debug\GoJuUOnTest.Resources.resources
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\obj\Debug\GoJuUOnTest.Result_Form.resources
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\obj\Debug\GoJuUOnTest.Test_Form.resources
+C:\Users\LCN\Documents\GitHub\GoJuUOnTest\obj\Debug\GoJuUOnTest.vbproj.GenerateResource.Cache
